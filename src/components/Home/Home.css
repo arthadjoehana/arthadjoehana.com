@@ -1,0 +1,83 @@
+
+.home-header {
+        margin: 300px 100px 300px 800px;
+}
+
+.home-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        color: rgba(255, 255, 255, 0.2);
+        cursor: default;
+}
+
+.home-text h1 {
+        margin-bottom: 10px;
+        font-size: 3rem;
+}
+
+.home-text h1 span {
+        transition: 0.5s;
+}
+
+.home-text h1 span:hover {
+        color: white;
+}
+
+.home-text h2 {
+        font-size: 2rem;
+}
+
+.home-text h2 span {
+        transition: 0.5s;
+}
+
+.home-text h2 span:hover {
+        color: white;
+}
+
+.home-button {
+        display: flex;
+        justify-content: center;
+}
+
+.home-button button {
+        width: 240px;
+        padding: 10px;
+        border-radius: 100px;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-style: none;
+        outline: none;
+        box-shadow: black 3px 2px;
+        animation: gradient-nav 1s ease-in-out infinite;
+        transition: 0.5s;
+}
+
+.home-button-link {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.5rem;
+}
+
+.home-button button:hover {
+        transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width: 600px) {
+        .home-header {
+                margin: 300px 0 0 0;
+        }
+        .home-text h2 {
+                font-size: 1.2rem;
+        }
+
+}
+
+
+
+
+

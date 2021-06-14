@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'JosefinSans';
+  
+}
+
+@font-face { font-family: JosefinSans; src: url('fonts/JosefinSans-Light.ttf'); } 
+@font-face { font-family: JosefinSans; src: url('fonts/JosefinSans-SemiBold.ttf'); } 
+
+body {
+  background-image: url(./images/grey.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(29, 29, 29, 0.9);
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+}
+
