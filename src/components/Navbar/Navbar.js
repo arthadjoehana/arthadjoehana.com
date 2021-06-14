@@ -61,29 +61,15 @@ function Navbar() {
             </li>              
                   
             <li className="nav-item">
-              <NavLink
-              exact
-              to="/github"
-              target="_blank"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-              >
-              GITHUB
-              </NavLink>
+              <a className="nav-links" href="https://github.com/arthadjoehana" target="blank">
+                GITHUB
+              </a>
             </li>        
 
             <li className="nav-item">
-              <NavLink
-              exact
-              to="/linkedin"
-              target="_blank"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-              >
-              LINKEDIN
-              </NavLink>
+              <a className="nav-links" href="https://www.linkedin.com/in/artha-djoehana-883253174/" target="blank">
+                LINKEDIN
+              </a>
             </li>        
 
           </ul>

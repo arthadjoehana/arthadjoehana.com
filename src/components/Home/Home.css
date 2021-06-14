@@ -22,6 +22,10 @@
         transition: 0.5s;
 }
 
+.name {
+        color: white;
+}
+
 .home-text h1 span:hover {
         color: white;
 }
@@ -45,7 +49,7 @@
 
 .home-button button {
         width: 240px;
-        padding: 10px;
+        padding: 20px;
         border-radius: 100px;
         background-color: rgba(255, 255, 255, 0.4);
         border-style: none;
@@ -69,12 +73,14 @@
 
 @media screen and (max-width: 600px) {
         .home-header {
-                margin: 300px 0 0 0;
+                margin: 200px 0 0 0;
         }
         .home-text h2 {
                 font-size: 1.2rem;
         }
-
+        .home-button {
+                margin-top: 200px;
+        }
 }
 
 

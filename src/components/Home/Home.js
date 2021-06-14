@@ -7,7 +7,7 @@ return (
 <div>
     <div className="home-header">
         <div className="home-text">
-            <h1><span>I'm</span> <span>ARTHA</span></h1>
+            <h1><span>I'm</span> <span className="name">ARTHA</span></h1>
             <h2><span>I</span> <span>design</span> <span>and</span> <span>build</span> <span>websites</span></h2>
         </div>
         <div className="home-button">
