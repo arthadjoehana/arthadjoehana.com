@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import './Projects.css';
 import AliceCarousel from 'react-alice-carousel';
 
 
 export default function Projects() {
     return (
-      <div className="Projects">
+      <div className="projects">
        <AliceCarousel disableButtonsControls mouseTracking>
         <div className="projects-slider">
           <div className="projects-slider-button img1">
