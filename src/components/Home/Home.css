@@ -1,24 +1,30 @@
-
-.home-header {
-        margin: 300px 200px 0 800px;
+.title {
+        font-size: 3rem;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        font-weight: bold;
 }
 
-.home-text {
+.header {
+        padding: 100px;
+}
+
+.header-text {
         display: flex;
+        margin: 100px;
         flex-direction: column;
-        justify-content: center;
         text-align: center;
         padding: 20px;
-        color: rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.3);
         cursor: default;
 }
 
-.home-text h1 {
+.header-text h1 {
         margin-bottom: 10px;
         font-size: 5rem;
 }
 
-.home-text h1 span {
+.header-text h1 span {
         transition: 0.5s;
 }
 
@@ -26,68 +32,408 @@
         color: white;
 }
 
-.home-text h1 span:hover {
+.header-text h1 span:hover {
         color: white;
+        
 }
 
-.home-text h2 {
-        font-size: 3rem;
+.header-text h2 {
+        font-size: 2.5rem;
+        margin-bottom: 60px;
 }
 
-.home-text h2 span {
+.header-text h2 span {
         transition: 0.5s;
 }
 
-.home-text h2 span:hover {
+.header-text h2 span:hover {
         color: white;
 }
 
-.home-button {
+.header-button {
         display: flex;
         justify-content: center;
+        margin: 100px;
 }
 
-.home-button button {
-        width: 300px;
-        padding: 20px;
+.header-button-link button {
+        width: 320px;
+        padding: 20px 10px 20px 10px;
         border-radius: 100px;
-        background-color: rgba(255, 255, 255, 0.4);
+        background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
         border-style: none;
         outline: none;
-        box-shadow: black 3px 2px;
-        animation: gradient-nav 1s ease-in-out infinite;
+        box-shadow: black 3px 3px 3px 3px;
         transition: 0.5s;
-}
-
-.home-button-link {
+        cursor: pointer;
+        font-weight: bold;
         text-decoration: none;
-        color: rgba(0, 0, 0, 0.5);
+        color: rgba(0, 0, 0, 0.8);
         font-size: 2rem;
 }
 
-.home-button button:hover {
+.header-button-link button:hover {
         transform: scale(1.1);
 }
 
+.projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px;
+        background-color: white;
+        color: rgba(0, 0, 0, 0.8);
+    }
 
-
-@media screen and (max-width: 600px) {
-        .home-header {
-                margin: 150px 0 0 0;
-        
-        }
-        .home-text h1 {
-                font-size: 4rem;
-        }
-        .home-text h2 {
-                font-size: 1.5rem;
-        }
-        .home-button {
-                margin-top: 150px;
-        }
+.projects-title {
+        border-bottom: 3px solid rgba(0, 0, 0, 0.8);
 }
 
+.projects-slider {
+        display: flex;
+        flex-direction: column;
+}
+    
+.projects-slider button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        outline: none;
+        transition: 1s ease-in-out;
 
+}
+    
+.slider-1 {
+        background-image: url("/src/images/ecom.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+}
+    
+.slider-2 {
+        background-image: url("/src/images/amazon.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+}
+    
+.slider-3 {
+        background-image: url("/src/images/crypto.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+}
+
+.contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px
+}
+    
+.contact-title {
+        color: white;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+.contact-area {
+        margin: 0 100px 0 100px;
+        height: 650px;
+        display: flex;
+        justify-content: space-between;
+        
+}
+
+.contact form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 30px 20px 0 20px;
+        color: white;
+        box-shadow: black 3px 3px 3px 3px;
+}
+
+.form-title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+}
+
+.form-group {
+        margin: 20px 10px 20px 10px;
+}
+    
+.form-group input {
+        color: white;
+        width: 100%;
+        background-color: transparent;
+        padding: 0 5px;
+        height: 40px;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+}
+    
+.form-group textarea {
+        color: white;
+        background-color: transparent;
+        width: 100%;
+        resize: none;
+        padding: 5px 5px;
+        height: 180px;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+}
+    
+.form-group button {
+        width: 100%;
+        align-items: center;
+        background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+        border: none;
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 0.7);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        box-shadow: black 3px 3px 3px 3px;
+        transition: 0.5s;
+}
+
+.profile {
+        margin: 50px;
+        color: white;
+        font-size: 2rem;
+        width: 800px;
+}
+
+.profile-title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+}
+
+.profile-media {
+        display: flex;
+        flex-direction: column;
+        padding: 80px;
+        font-size: 1.5rem;
+}
+
+.profile-media i {
+        margin: 20px;
+        font-size: 3rem;
+        
+}
+
+.about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px;
+        background-color: white;
+        color: rgba(0, 0, 0, 0.8);
+}
+
+.about-title {
+        border-bottom: 3px solid rgba(0, 0, 0, 0.8);
+        font-weight: bold
+}
+
+.about-text {
+        padding-bottom: 60px;
+        font-size: 1.5rem;
+}
+    
+.about-text p {
+        width: 50%;
+        margin-bottom: 50px;
+        font-weight: bold
+}
+
+.about-skills {
+        display: flex;
+        justify-content: space-evenly;
+}
+
+.about-icons {
+        background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+        color: rgb(2, 2, 2);
+        margin: 30px;
+        padding: 10px;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        border-radius: 1000px;
+        font-size: 4.5rem;
+        font-weight: bold;
+        box-shadow: rgba(0, 0, 0, 0.9) 3px 3px 3px 3px;
+        transition: 0.5s;
+}
+
+.footer {
+        background-color: rgb(0, 0, 0);
+        height: 200px;
+        color: white;
+}
+
+.footer-copyright {
+        font-size: 2rem;
+        padding: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+        .title {
+                margin-top: 20px;
+                text-align: center;
+        }
+        .header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 20px
+        }
+        .header-text {
+                display: flex;
+                margin: 150px 0 20px 0;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+                color: rgba(255, 255, 255, 0.3);
+                cursor: default;
+        }
+        .header-text h1 {
+                margin-bottom: 10px;
+                font-size: 3.8rem;
+        } 
+        .header-text h2 {
+                font-size: 1.5rem;
+                margin-bottom: 60px;
+        }
+        .header-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 150px;
+        }
+        .projects {
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+        }
+        .slider-1 {
+                background-image: url("/src/images/ecom2.jpg");
+        }
+        .slider-2 {
+                background-image: url("/src/images/amazon2.jpg");
+        }
+        .slider-3 {
+                background-image: url("/src/images/crypto2.jpg");
+        }
+        .contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 20px
+        }
+        .contact-area {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+        }
+        .form-group button {
+                margin-bottom: 15px;
+        }
+        .profile {
+                margin: 0;
+                color: white;
+                font-size: 2rem;
+                width: 100%;
+        }
+        .profile-title {
+                margin: 50px;
+        }
+        .profile-media {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+                width: 100%;
+                padding: 40px;
+                font-size: 1.5rem;
+        }
+        .profile-media i {
+                margin: 20px;
+                font-size: 3rem; 
+        }
+        .about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px
+        }
+        .about-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+                font-size: 1rem;
+                width: 100%;
+        }
+        .about-text p {
+                font-size: 1.3rem;
+                width: 100%;
+                margin-bottom: 30px;
+        }
+        .about-skills {
+                margin-bottom: 50px;
+                display: inline-block;
+                text-align: center;
+        }
+        .about-icons {
+                margin: 10px;
+                display: inline-block;
+        }
+        .footer-copyright {
+                font-size: 1.5rem;
+        }
+}
 
 
 

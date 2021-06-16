@@ -1,109 +1,42 @@
-.projects {
-    margin-top: 100px;
-}
-
-.projects-slider {
-    width: 100%;
-    height: 650px;
-}
-
-.projects-slider-button button {
-  width: 100%;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-  margin-top: 600px;
-  transition: 1s ease-in-out;
-}
-
-.img1 {
-  background-image: url(/src/images/ecom.jpg);
-  background-size: cover;
-}
-
-.img2 {
-  background-image: url(/src/images/amazon.jpg);
-  background-size: cover;
-}
-
-
-.img3 {
-  background-image: url(/src/images/crypto.jpg);
-  background-size: cover;
-}
-
-@media screen and (max-width: 960px) {
-  .alice-carousel {
-    position: absolute;
-    z-index: 1;
-  }
-
-  .projects-slider {
-    margin-top: 20px;
-    width: 100%;
-    height: 700px;
-    z-index: 1;
-  }
-  .img1 {
-    background-image: url(/src/images/ecom2.jpg);
-    background-size: cover;
-  }
-  
-  .img2 {
-    background-image: url(/src/images/amazon2.jpg);
-    background-size: cover;
-  }
-  
-  
-  .img3 {
-    background-image: url(/src/images/crypto2.jpg);
-    background-size: cover;
-  }
-
-
-
-  
-}
-
-
 .alice-carousel .animated {
     -webkit-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation-fill-mode: both; 
+  }
   
   .alice-carousel .animated-out {
-    z-index: 1; }
+    z-index: 1; 
+  }
   
   .alice-carousel .fadeOut {
     -webkit-animation-name: fadeOut;
-    animation-name: fadeOut; }
+    animation-name: fadeOut; 
+  }
   
   @-webkit-keyframes fadeOut {
     0% {
       opacity: 1; }
     100% {
       opacity: 0;
-      visibility: hidden; } }
+      visibility: hidden; 
+    } 
+    }
   
   @keyframes fadeOut {
     0% {
       opacity: 1; }
     100% {
       opacity: 0;
-      visibility: hidden; } }
+      visibility: hidden;
+     } 
+    }
   
   .alice-carousel {
     position: relative;
     width: 80%;
     margin: auto;
     direction: ltr;
-    z-index: 1; }
+    z-index: 1; 
+  }
   
   .alice-carousel__wrapper {
     position: relative;
@@ -144,10 +77,12 @@
     }
 
       .alice-carousel__stage-item * {
-        line-height: initial; }
+        line-height: initial; 
+      }
       .alice-carousel__stage-item.__hidden {
         opacity: 0;
-        overflow: hidden; }
+        overflow: hidden; 
+      }
   
   .alice-carousel__prev-btn,
   .alice-carousel__next-btn {
@@ -161,38 +96,46 @@
     .alice-carousel__next-btn [data-area]::after {
       position: relative;
       content: attr(data-area);
-      text-transform: capitalize; }
+      text-transform: capitalize; 
+    }
   
   .alice-carousel__prev-btn {
-    text-align: right; }
+    text-align: right; 
+  }
   
   .alice-carousel__prev-btn-item,
   .alice-carousel__next-btn-item {
     display: inline-block;
     cursor: pointer;
-    color: white; }
+    color: white; 
+  }
     .alice-carousel__prev-btn-item:hover,
     .alice-carousel__next-btn-item:hover {
-      color: white; }
+      color: white; 
+    }
     .alice-carousel__prev-btn-item.__inactive,
     .alice-carousel__next-btn-item.__inactive {
       opacity: 0.2;
-      pointer-events: none; }
+      pointer-events: none; 
+    }
   
   .alice-carousel__play-btn {
     position: absolute;
     top: 30px;
     left: 20px;
-    display: inline-block; }
+    display: inline-block; 
+  }
     .alice-carousel__play-btn:hover {
-      cursor: pointer; }
+      cursor: pointer; 
+    }
     .alice-carousel__play-btn-wrapper {
       position: relative;
       width: 32px;
       height: 32px;
       padding: 10px;
       border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.5); }
+      background-color: rgba(255, 255, 255, 0.5); 
+    }
   
   .alice-carousel__play-btn-item {
     position: absolute;
@@ -201,7 +144,8 @@
     cursor: pointer;
     border: 0;
     outline: none;
-    background: transparent; }
+    background: transparent; 
+  }
     .alice-carousel__play-btn-item::before, .alice-carousel__play-btn-item::after {
       position: absolute;
       pointer-events: none;
@@ -213,37 +157,52 @@
       border-width: 8px 0 8px 15px;
       border-style: solid;
       border-color: transparent;
-      border-left-color: white; }
+      border-left-color: white; 
+    }
     .alice-carousel__play-btn-item::before {
       left: 5px;
-      height: 14px; }
+      height: 14px; 
+    }
     .alice-carousel__play-btn-item::after {
       top: 7px;
-      left: 18px; }
+      left: 18px; 
+    }
     .alice-carousel__play-btn-item.__pause::before, .alice-carousel__play-btn-item.__pause::after {
       height: 30px;
-      border-width: 0 0 0 10px; }
+      border-width: 0 0 0 10px; 
+    }
     .alice-carousel__play-btn-item.__pause::after {
       top: 0;
-      left: 18px; }
+      left: 18px; 
+    }
   
   .alice-carousel__dots {
     margin: 30px 3px 5px;
     padding: 0;
     list-style: none;
-    text-align: center; }
+    text-align: center; 
+  }
     .alice-carousel__dots > li {
-      display: inline-block; }
+      display: inline-block; 
+    }
     .alice-carousel__dots-item:not(.__custom) {
-      width: 8px;
-      height: 8px;
+      margin: 20px;
+      width: 20px;
+      height: 20px;
       cursor: pointer;
       border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.2); }
-      .alice-carousel__dots-item:not(.__custom):not(:last-child) {
-        margin-right: 20px; }
-      .alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
-        background-color: rgb(255, 255, 255); }
+      background-color: rgba(0, 0, 0, 0.8); 
+    }
+      
+  .alice-carousel__dots-item:not(.__custom):not(:last-child) {
+     margin-right: 20px; 
+  }
+
+  .alice-carousel__dots-item:not(.__custom).__active {
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    box-shadow: rgba(0, 0, 0, 0.9) 2px 2px 2px 2px;
+  }
   
   .alice-carousel__slide-info {
     position: absolute;
@@ -253,8 +212,11 @@
     padding: 5px 10px;
     color: white;
     border-radius: 5px;
-    background-color: rgba(224, 228, 251, 0.6); }
-    .alice-carousel__slide-info-item {
-      vertical-align: middle;
-      line-height: 0; }
+    background-color: rgba(224, 228, 251, 0.6); 
+  }
+
+.alice-carousel__slide-info-item {
+  vertical-align: middle;
+  line-height: 0; 
+}
   

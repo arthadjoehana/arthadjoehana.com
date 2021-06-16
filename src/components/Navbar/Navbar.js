@@ -25,41 +25,23 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <NavLink
-              exact
-              to="/about"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-              >
-              ABOUT
-              </NavLink>
+              <a className="nav-links" activeClassName="active" href="#about" onClick={handleClick}>
+                ABOUT
+              </a>
             </li>
-                  
+            
             <li className="nav-item">
-              <NavLink
-              exact
-              to="/contact"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-              >
-              CONTACT
-              </NavLink>
+              <a className="nav-links" activeClassName="active" href="#projects" onClick={handleClick}>
+                PROJECTS
+              </a>
+            </li>     
+
+            <li className="nav-item">
+              <a className="nav-links" activeClassName="active" href="#contact" onClick={handleClick}>
+                CONTACT
+              </a>
             </li>
-                  
-            <li className="nav-item">
-              <NavLink
-              exact
-              to="/projects"
-              activeClassName="active"
-              className="nav-links"
-              onClick={handleClick}
-              >
-              PROJECTS
-              </NavLink>
-            </li>              
-                  
+
             <li className="nav-item">
               <a className="nav-links" href="https://github.com/arthadjoehana" target="blank">
                 GITHUB
