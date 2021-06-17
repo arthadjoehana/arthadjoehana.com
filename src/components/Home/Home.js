@@ -67,29 +67,38 @@ return (
         <form onSubmit={sendEmail}>
           <div className="form-title">Via Email...</div>
           <div className="form-group">
-            <input type="text" placeholder="Your name"/>
+            <input type="text" placeholder="Your name" id="username" name="Username"/>
           </div>
           <div className="form-group">
-            <input type="email" placeholder="Your email"/>
+            <input type="email" placeholder="Your email" id="email" name="Email"/>
           </div>
           <div className="form-group">
-            <input type="text" placeholder="Subject"/>
+            <input type="text" placeholder="Subject" id="subject" name="Subject"/>
           </div>
           <div className="form-group">
-            <textarea id="message" placeholder="Your message"/>
+            <textarea id="message" placeholder="Your message" name="Message"/>
           </div>
           <div className="form-group">
-            <button type="submit">Send</button>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
           </div>
         </form>
         <div className="profile">
           <div className="profile-title">...or via my profiles :</div>
           <div className="profile-media">
-            <div><i class="fab fa-linkedin"></i> on LinkedIn</div>
-            <div><i class="fab fa-google-plus"></i> on Google+</div>
-            <div><i class="fab fa-facebook"></i> on Facebook</div>
-            <div><i class="fab fa-twitter-square"></i> on Twitter</div>
-            <div><i class="fab fa-instagram-square"></i> on Instagram</div>
+            <div className="media-icon">
+              <a href="#about"><i class="fab fa-linkedin"></i></a>
+              <a href="#about"><i class="fab fa-google-plus"></i></a>
+              <a href="#about"><i class="fab fa-facebook"></i></a>
+              <a href="#about"><i class="fab fa-twitter-square"></i></a>
+              <a href="#about"><i class="fab fa-instagram-square"></i></a>
+            </div>
+            <div className="media-text">
+              <h4 className="media-name"> on LinkedIn</h4>
+              <h4 className="media-name"> on Google+</h4>
+              <h4 className="media-name"> on Facebook</h4>
+              <h4 className="media-name"> on Twitter</h4>
+              <h4 className="media-name"> on Instagram</h4>
+            </div>
           </div>
         </div>
       </div>
