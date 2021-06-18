@@ -31,6 +31,12 @@ return (
           </a> 
         </div>
 
+        <div className="header-link">
+        <a href="#contact"><i class="fas fa-pen"></i> Contact me</a>
+        </div>
+        
+
+
     </div>
 
     <div className="projects">
@@ -78,26 +84,30 @@ return (
           <div className="form-group">
             <textarea id="message" placeholder="Your message" name="Message"/>
           </div>
-          <div className="form-group">
-            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          <div className="">
+            <div className="form-buttons">
+              <button type="reset"><i class="fas fa-eraser"></i></button>
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </div>
           </div>
         </form>
         <div className="profile">
           <div className="profile-title">...or via my profiles :</div>
           <div className="profile-media">
-            <div className="media-icon">
-              <a href="#about"><i class="fab fa-linkedin"></i></a>
-              <a href="#about"><i class="fab fa-google-plus"></i></a>
-              <a href="#about"><i class="fab fa-facebook"></i></a>
-              <a href="#about"><i class="fab fa-twitter-square"></i></a>
-              <a href="#about"><i class="fab fa-instagram-square"></i></a>
+            <div className="media-elements">
+              <a href="https://www.linkedin.com/in/artha-djoehana-883253174/" target="blank"><i class="fab fa-linkedin"></i></a><span>LinkedIn</span>
             </div>
-            <div className="media-text">
-              <h4 className="media-name"> on LinkedIn</h4>
-              <h4 className="media-name"> on Google+</h4>
-              <h4 className="media-name"> on Facebook</h4>
-              <h4 className="media-name"> on Twitter</h4>
-              <h4 className="media-name"> on Instagram</h4>
+            <div className="media-elements">
+              <a href="https://www.youtube.com/channel/UCVz5cUHzDuZ8XTk2J9Y2PRw" target="blank"><i class="fab fa-youtube-square"></i></a><span>Youtube</span>
+            </div>
+            <div className="media-elements">
+              <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a><span>Facebook</span>
+            </div>
+            <div className="media-elements">
+              <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter-square"></i></a><span>Twitter</span>
+            </div>
+            <div className="media-elements">
+              <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram-square"></i></a><span>Instagram</span>
             </div>
           </div>
         </div>
@@ -111,7 +121,7 @@ return (
             I design and build websites using HTML, CSS and Javascript and various front-end and back-end technologies such as React, NodeJs, Bootstrap, Jquery and MongoDB.
             </p>
             <p>
-            I intend to learn coding beyond web development, aiming to someday become a well-rounded programmer able to work in web, softwares, applications and video games.
+            I intend to learn coding beyond web development, aiming to become a well-rounded programmer able to work in web, softwares, applications and video games.
             </p>
             <p>
             When I'm not coding, I draw mangas or trade in the stock market. Sometimes I play video games.
@@ -133,7 +143,6 @@ return (
         <div className="footer-copyright">Copyright © Artha Djoehana</div>
       </div>
     </div>
-    
 
 </div>
 );

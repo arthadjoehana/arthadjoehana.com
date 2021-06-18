@@ -86,12 +86,9 @@ nav {
       margin-top: 70px;
       width: 100%;
       display: table;
-      color: rgba(255, 255, 255, 0.4);
-      
+      color: rgb(255, 255, 255);
     }
   
-    
-
     .nav-icon {
       display: block;
       position: absolute;

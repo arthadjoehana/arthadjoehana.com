@@ -29,7 +29,9 @@
 }
 
 .name {
-        color: white;
+        -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+        -webkit-animation: gradient-nav 1s ease-in-out infinite;
 }
 
 .header-text h1 span:hover {
@@ -53,7 +55,7 @@
 .header-button {
         display: flex;
         justify-content: center;
-        margin: 120px;
+        margin-top: 120px;
 }
 
 .header-button-link button {
@@ -75,6 +77,19 @@
 
 .header-button-link button:hover {
         transform: scale(1.1);
+}
+
+.header-link {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 10px;
+}
+
+.header-link a {
+        text-decoration: none;
+        color: white;
+        border-bottom: 3px solid white;
+        font-size: 1.2rem;
 }
 
 .projects {
@@ -138,7 +153,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 100px
+        padding: 100px;
 }
     
 .contact-title {
@@ -148,10 +163,7 @@
 
 .contact-area {
         margin: 0 100px 0 100px;
-        height: 650px;
         display: flex;
-        justify-content: space-between;
-        
 }
 
 .contact form {
@@ -196,25 +208,26 @@
         width: 100%;
         resize: none;
         padding: 5px 5px;
-        height: 180px;
+        height: 200px;
         font-size: 1rem;
         border: none;
         outline: none;
 }
-    
-.form-group button {
+
+.form-buttons {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+}
+
+.form-buttons button {
         background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
         radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
         border: none;
-        border-radius: 100px;
+        border-radius: 5px;
         color: rgba(0, 0, 0);
         height: 60px;
         width: 60px;
-        margin-top: 10px;
         padding: 0 7px 0 0;
         text-decoration: none;
         font-size: 1.8rem;
@@ -225,51 +238,55 @@
         transition: 0.5s;
 }
 
+.form-buttons button:hover {
+        transform: scale(1.1);
+}
+
 .profile {
-        margin: 50px;
+        padding: 30px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
         color: white;
         font-size: 2rem;
-        width: 800px;
+        width: 400px;
+        display: flex;
+        margin-left: 300px;
 }
 
 .profile-title {
+        text-align: center;
         font-size: 2rem;
         font-weight: bold;
-        text-align: center;
-        padding-bottom: 10px;
 }
 
 .profile-media {
+        margin-top: 100px;
         display: flex;
-        padding: 80px;
+        flex-direction: column;
         font-size: 1.5rem;
 }
 
-.media-icon a {
+.media-elements {
         display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
+}
+
+.media-elements i {
+        margin: 20px;
         color: white;
         text-decoration: none;
+        font-size: 3rem; 
 }
 
-.media-icon i {
-        margin: 20px;
-        font-size: 3rem;
-        
+.media-elements span {
+        margin-top: 30px;
 }
 
-.media-icon i:hover{
+.media-elements i:hover{
         -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
         -webkit-animation: gradient-nav 1s ease-in-out infinite;
-}
-
-.media-text {
-        padding-top: 30px;
-}
-
-.media-name {
-        font-size: 1.5rem;
-        margin-bottom: 57px;
 }
 
 .about {
@@ -319,7 +336,7 @@
 }
 
 .footer {
-        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.8);
         height: 200px;
         color: white;
 }
@@ -370,7 +387,11 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                margin: 150px;
+                margin-top: 120px;
+        }
+        .header-link {
+                margin-top: 60px;
+                margin-bottom: 100px;
         }
         .projects {
                 padding: 20px;
@@ -404,8 +425,8 @@
                 align-items: center;
                 text-align: center;
         }
-        .form-group button {
-                margin-bottom: 15px;
+        .form-buttons {
+                margin-bottom: 20px;
         }
         .profile {
                 margin: 0;
@@ -414,23 +435,23 @@
                 width: 100%;
         }
         .profile-title {
-                margin-top: 50px;
+                margin: 50px 0 0 0;
         }
         .profile-media {
-                display: inline;
-                justify-content: center;
-        }
-        .media-icon {
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
+                margin: 50px;
         }
-        .media-icon i {
+        .media-elements {
+                border-top: 2px solid white;
+        }
+        .media-elements i {
                 font-size: 4rem;
-                margin: 0 10px 0 10px;
+                margin: 20px 10px 20px 10px;
         }
-        .media-name {
-                display: none;
-                font-size: 0.1rem;
+        .media-elements span {
+               display: none;
         }
         .about {
                 display: flex;

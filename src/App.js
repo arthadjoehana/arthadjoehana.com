@@ -11,13 +11,14 @@ function App(){
    
 return (
 <Router>
-<div className="app">
+<div>
 <Navbar />
+<Home />
 <div>
 
 
 
-<Route path="/" exact component={Home} />
+
 
 
 
