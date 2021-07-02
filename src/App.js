@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/navbar/Navbar';
 
-import Home from './components/Home/Home';
+import Home from './components/home/Home';
 
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
@@ -10,21 +10,12 @@ import './App.css';
 function App(){
    
 return (
-<Router>
-<div>
-<Navbar />
-<Home />
-<div>
-
-
-
-
-
-
-
-</div>
-</div>
-</Router>
+    <Router>
+        <div>
+            <Home />
+            
+        </div>
+    </Router>
 );
 }
 
