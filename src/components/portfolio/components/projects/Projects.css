@@ -1,0 +1,87 @@
+.projects {
+    background-color: rgba(255, 255, 255);
+    box-shadow: 3px 3px 3px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project h1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.project button {
+    background-color: transparent;
+    border: none;
+}
+
+.previous-next-button {
+    padding: 20px;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous-next-button button {
+    color: white;
+    text-shadow: black 3px 3px 3px;
+    font-size: 3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.project-button {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px 50px 20px 50px;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 3rem;
+    overflow: hidden;
+}
+
+.img {
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+}
+
+.img-1 {
+    background-image: url("/src/components/portfolio/images/crypto.jpg");
+}
+
+@media screen and (max-width: 600px) {
+    .img {
+        background-image: url("/src/components/portfolio/images/crypto2.jpg");
+        height: 800px;
+    }
+    .project h1 {
+        padding: 10px;
+        font-size: 2.5rem;
+    }
+    .link {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}

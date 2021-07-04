@@ -1,25 +1,20 @@
 import React from 'react';
-import Navbar from './components/navbar/Navbar';
 
-import Home from './components/home/Home';
+import Portfolio from './components/portfolio/Portfolio';
+import Cryptotracker from './components/cryptotracker/Cryptotracker';
 
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 
 
-function App(){
-   
+function App(){ 
 return (
     <Router>
         <div>
-            <Home />
-            
+            <Route exact path="/" component={Portfolio} />
+            <Route exact path="/cryptotracker" component={Cryptotracker} />
         </div>
     </Router>
 );
-}
-
-
-
-
+};
 export default App;

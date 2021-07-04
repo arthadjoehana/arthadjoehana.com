@@ -1,0 +1,142 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    background-image: url("/src/components/portfolio/images/white.jpg");
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.about-title {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    padding: 10px 0 10px 50px;
+    font-weight: bold;
+    color: rgba(0, 0, 0);
+    border-bottom: 3px solid rgba(0, 0, 0);
+}
+.about-text {
+    font-size: 1.5rem;
+    padding: 0 50px 50px 50px;
+    color: rgba(0, 0, 0);
+}
+
+.about-text p {
+    width: 50%;
+    margin-bottom: 50px;
+    font-weight: bold
+}
+
+.about-skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-skills a {
+    position: relative;
+    text-decoration: none;
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    font-size: 4.5rem;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.9) 3px 3px 3px 3px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.no-icon {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 1.2rem;
+}
+
+.about-skills a:hover {
+    color: rgb(0, 0, 0);
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+.about-skills a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 200%;
+    width: 200%;
+    height: 100%;
+    background:  linear-gradient(180deg, transparent, white, transparent);
+    transition: 0.1s;
+    transform: rotate(135deg);
+}
+
+.about-skills a:hover::before{
+    left: -125%;
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+    }
+    .about-title {
+            padding: 0;
+            margin-top: 20px;
+            text-align: center;
+    }
+    .about-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            font-size: 1rem;
+            width: 100%;
+            padding: 10px;
+    }
+    .about-text p {
+            font-size: 1.3rem;
+            width: 100%;
+            margin-bottom: 30px;
+    }
+    .about-skills {
+            margin-bottom: 50px;
+            display: inline-block;
+            text-align: center;
+    }
+    .about-skills a {
+            height: 60px;
+            width: 60px;
+            padding: 10px;
+            margin: 5px;
+            font-size: 2.2rem;
+            display: inline-block;
+            color: black;
+    }
+    .no-icon {
+            display: flex;
+            justify-content: center;
+            padding-top: 12px;
+            font-size: 0.8rem;
+    }
+    .about-skills a::before {
+            left: -170%;
+            width: 300%;
+    }
+    .about-skills a:hover::before{
+            left: -170%;
+    }
+}

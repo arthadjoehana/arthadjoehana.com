@@ -1,0 +1,18 @@
+.cryptotracker {
+  background-image: url("/src/components/cryptotracker/images/background2.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+  color: #fff;
+  height: 1200px;
+}
+
+.searchbar {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}

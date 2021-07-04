@@ -1,0 +1,233 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/src/components/portfolio/images/grey.jpg");
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 100px;
+}
+
+.contact-area {
+    margin: 0 100px 0 100px;
+    display: flex;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px 0 20px;
+    color: rgb(255, 255, 255);
+    box-shadow: black 5px 5px 5px 5px;
+}
+
+.form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0 10px 0;
+    border-bottom: 2px solid white;
+}
+
+.form-group {
+    margin: 50px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+
+}
+
+.form-group input {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.form-group textarea {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    margin-top: 20px;
+    width: 100%;
+    resize: none;
+    padding: 5px 5px;
+    height: 250px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.send {
+    position: relative;
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    border: none;
+    border-radius: 50px;
+    color: rgba(0, 0, 0, 0.7);
+    height: 60px;
+    width: 60px;
+    padding: 0 7px 0 0;
+    text-decoration: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: black 2px 2px 2px 2px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.erase {
+    position: relative;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.7);
+    height: 40px;
+    width: 40px;
+    margin-top: 15px;
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: black 2px 2px 2px 2px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.form-buttons button:hover {
+    transform: scale(1.1);
+}
+
+.send::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 200%;
+    width: 250%;
+    height: 100%;
+    background:  linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.5), white, rgba(255, 255, 255, 0.5), transparent);
+    transition: 0.3s;
+    transform: rotate(135deg);
+}
+
+.send:hover::before{
+    left: -170%;
+}
+
+.profile {
+    padding: 100px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
+    width: 310px;
+    display: flex;
+    margin-left: 200px;
+}
+
+.profile-title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.profile-media {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.media-elements {
+    display: flex;
+}
+
+.media-elements i {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem; 
+}
+
+.media-elements span {
+    margin-top: 10px;
+}
+
+.media-elements i:hover{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: gradient-nav 0.7s ease-in-out infinite;
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px
+    }
+    .contact form {
+            width: 90%;
+            height: 600px;
+    }
+    .contact-area {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    }
+    .form-group textarea{
+            height: 160px;
+    }
+    .form-buttons {
+            margin-bottom: 20px;
+    }
+    .profile {
+            margin: 0;
+            padding: 20px;
+            color: white;
+            font-size: 2rem;
+            width: 80%;
+    }
+    .profile-title {
+            margin: 50px 0 0 0;
+            text-align: center;
+            padding: 10px;
+    }
+    .profile-media {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 10px;
+    }
+    .media-elements i {
+            font-size: 4rem;
+            margin: 20px 10px 20px 10px;
+    }
+    .media-elements span {
+           display: none;
+    }
+}
